@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Panitia Natal</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+		<div class="container bgContent">
+			<div class="text-center">
+				<table>
+					<tbody>
+						<tr>
+							<td>Sekretaris</td>
+							<td>Bendahara</td>
+							<td>Sie Dana</td>
+							<td>Sie Acara</td>
+							<td>Sie Perlengkapan</td>
+							<td>Sie Publikasi</td>
+							<td>Sie Komsumsi</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4 style="margin-bottom: 40px">Ketua Panitia Natal</h4>
+				<div class="row">
+					<div class="col">Column 1</div>
+					<div class="col">Column 2</div>
+					<div class="col">
+						Column 3
+						<ol>
+							<li>Halomoan Parapat SH</li>
+							<li>Jonatan Parapat SE MBA</li>
+							<li>Ir.Bona Parapat M.Eng</li>
+							<li>Reinhard Parapat SH,MH</li>
+							<li>Ridwan Parapat SH,MH</li>
+							<li>Hotman Parapat</li>
+							<li>Poltak Parapat</li>
+						</ol>
+
+					</div>
+					<div class="col">Column 4</div>
+					<div class="col">Column 5</div>
+					<div class="col">Column 6</div>
+					<div class="col">Column 7</div>
+				</div>
+			</div>
+		</div>
+		<div th:insert="fragments/section :: footer-section"></div>
+	</div>
+</body>
+</html>

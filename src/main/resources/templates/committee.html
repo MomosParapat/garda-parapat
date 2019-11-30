@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Panitia Natal</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+				<span id="countdown"></span>
+			</div>
+		</div>
+
+		<div class="container bgContent">
+			<div class="row">
+				<div class="col text-center">
+					Ketua
+					<p>Ruston Parapat,Mkom,MBA</p>
+					Wakil Ketua
+					<p>ir. Hisar Parapat</p>
+					Sekretaris
+					<p>Benny Parapat SE,Ak</p>
+					Bendahara
+					<p>Anna br Parapat SE,MM</p>
+
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-md-3">
+					<ol>
+						<h5>Seksi Dana</h5>
+						<li>Halomoan Parapat SH</li>
+						<li>Jonatan Parapat SE MBA</li>
+						<li>Ir.Bona Parapat M.Eng</li>
+						<li>Reinhard Parapat SH,MH</li>
+						<li>Ridwan Parapat SH,MH</li>
+						<li>Hotman Parapat</li>
+						<li>Poltak Parapat</li>
+					</ol>
+
+				</div>
+				<div class="col-md-3">
+					<ol>
+						<h5>Seksi Acara</h5>
+						<li>Pdt DR.Julius Parapat,MTh</li>
+						<li>Pdt.Bertua br Parapat</li>
+						<li>Anna br Parapat SE,MM</li>
+						<li>St.T.Pardede</li>
+					</ol>
+				</div>
+				<div class="col-md-3">
+					<ol>
+						<h5>Seksi Perlengkapan</h5>
+						<li>Andreas Parapat SE,MBA</li>
+						<li>Selamat Parapat</li>
+						<li>Maradona Parapat</li>
+					</ol>
+
+				</div>
+				<div class="col"></div>
+			</div>
+			<hr>
+			<div class="row" style="padding-bottom: 150px">
+				<div class="col"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<ol>
+						<h5>Seksi Publikasi</h5>
+						<li>Momos Parapat ,SKom</li>
+						<li>Teddy Parapat</li>
+					</ol>
+
+				</div>
+
+				<div class="col-md-3">
+					<ol>
+						<h5>Seksi Konsumsi</h5>
+						<li>Ny.R Saragih br Parapat</li>
+						<li>Ny.Tambunan br Parapat</li>
+						<li>Ny.R .Sianipar br Parapat</li>
+					</ol>
+
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+		<!-- 		<div th:insert="fragments/section :: footer-section"></div>
+ -->
+	</div>
+</body>
+</html>

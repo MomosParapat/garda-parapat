@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<footer th:fragment="footerFragment" class="">
+	<div class="row bg-success">
+		<div class="container">
+			<div class="col-sm-12 col-md-3">
+				<h5>Informasi berguna</h5>
+				<ul>
+					<li><a>Tentang Kami</a></li>
+					<li><a>Tanya Jawab</a></li>
+					<li><a>Agenda Kegiatan</a></li>
+					<li><a>Komisaris dan Direksi</a></li>
+					<li><a>Caranya</a></li>
+					<li><a>Biaya</a></li>
+					<li><a>Pendana</a></li>
+					<li><a>Hubungi Kami</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<h5>Hukum</h5>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<h5>Kontak</h5>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<h5>Social</h5>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<hr>
+		<div class="container">Sirabun</div>
+	</div>
+
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Dec 21, 2019 19:00:00").getTime();
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24))
+					/ (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60))
+					/ (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Output the result in an element with id="demo"
+			$("#countdown").text(
+					days + " hari " + hours + " jam " + minutes + " menit "
+							+ seconds + " detik ");
+
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				$("#countdown").text("EXPIRED");
+			}
+		}, 1000);
+	</script>
+</footer>
+</html>

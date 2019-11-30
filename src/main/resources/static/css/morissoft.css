@@ -1,0 +1,54 @@
+body, html {
+	background: #E9ECEF;
+	height: 100%;
+	margin: 0;
+	font-family: arial, verdana, tahoma;
+	font-size: 12px;
+}
+
+.navbar {
+	min-height: 60px;
+}
+
+.bgContent {
+	background: #fff url("/images/2019_christmas-pictures-background.png");
+	border-radius: 35px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 700px;
+	margin-bottom: 20px;
+	padding-top: 50px;
+}
+
+.section-footer {
+	background: #fff;
+	padding-top: 80px;
+	border-top: 1px solid #e4e4e4;
+	background-size: cover;
+	padding-bottom: 80px;
+	h2 { text-align : center;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+
+}
+.public-header {
+	background: #fff url(/images/footer-section.jpg) 0 50% no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px 15px 0px;
+	color: $brand-color;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dddddd; h1 { font-size : 30px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+}
+.carousel-inner img {
+	width: 100%;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Tentang Kami</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+
+		<div class="container bgContent">
+			<h4>Panitia Natal Parapat Se JABODETABEK 2019</h4>
+			<div>
+				<ul style="list-style-type: none">
+					<li>Ketua</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Ruston Parapat,Mkom,MBA</li>
+						</ul>
+					</li>
+					<li></li>
+					<li>Wakil ketua</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Ir.Hisar Parapat</li>
+						</ul>
+					</li>
+					<li>Sekretaris</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Benny Parapat SE,Ak</li>
+						</ul>
+					</li>
+					<li>Bendahara</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Anna br Parapat SE,MM</li>
+						</ul>
+					</li>
+					<li>Seksi Dana</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Halomoan Parapat SH</li>
+							<li>Jonatan Parapat SE MBA</li>
+							<li>Ir.Bona Parapat M.Eng</li>
+							<li>Reinhard Parapat SH,MH</li>
+							<li>Ridwan Parapat SH,MH</li>
+							<li>Hotman Parapat</li>
+							<li>Poltak Parapat</li>
+						</ul>
+					</li>
+					<li>Seksi Acara</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Pdt DR.Julius Parapat,MTh</li>
+							<li>Pdt.Bertua br Parapat</li>
+							<li>Anna br Parapat SE,MM</li>
+							<li>St.T.Pardede</li>
+						</ul>
+					</li>
+					<li>Seksi Perlengkapan</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Andreas Parapat SE,MBA</li>
+							<li>Selamat Parapat</li>
+							<li>Maradona Parapat</li>
+						</ul>
+					</li>
+					<li>Seksi Publikasi</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Momos Parapat ,SKom</li>
+							<li>Teddy Parapat</li>
+						</ul>
+					</li>
+					<li>Seksi Komsumsi</li>
+					<li>
+						<ul style="list-style-type: none">
+							<li>Ny.R Saragih br Parapat</li>
+							<li>Ny.Tambunan br Parapat</li>
+							<li>Ny.R .Sianipar br Parapat</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div th:insert="fragments/section :: footer-section"></div>
+	</div>
+</body>
+</html>
