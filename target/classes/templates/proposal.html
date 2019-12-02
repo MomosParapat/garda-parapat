@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Panitia Natal</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+		<div class="container bgContent">
+			<div class="row" style="padding-bottom: 50px">
+				<div class="col"></div>
+				<div class="col-md-10">
+					<iframe frameborder="0"
+						style="height: 600px; width: 100%; position: relative; border: 1px solid #ddd; padding: 5px; background: #ffffff; padding: 10px;"
+						src="/files/Proposal Panitia Natal Bersama.pdf"></iframe>
+
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

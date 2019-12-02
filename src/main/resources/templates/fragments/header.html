@@ -2,71 +2,50 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <header th:fragment="headerFragment">
-	<nav class="navbar navbar-expand-md navbar-light bg-success fixed-top">
-		<div class="container">
-
-			<a class="navbar-brand"><img src="img/dish.png"></a>
-
-			<button type="button" class="navbar-toggler bg-light"
-				data-toggle="collapse" data-target="#nav">
-
-				<span class="navbar-toggler-icon"></span>
-
-			</button>
-
-			<div class="collapse navbar-collapse justify-content-between"
-				id="nav">
-
-				<ul class="navbar-nav">
-
-					<li class="nav-item"><a
-						class="nav-link text-light font-weight-bold px-3" href="#">HOME</a>
-
-					</li>
-
-					<li class="nav-item dropdown" data-toggle="dropdown"><a
-						class="nav-link text-light font-weight-bold px-3 dropdown-toggle"
-						href="#">CATEGORIES</a>
-
-						<div class="dropdown-menu">
-
-							<a class="dropdown-item" href="#">Fast Food</a> <a
-								class="dropdown-item" href="#">Lunch</a> <a
-								class="dropdown-item" href="#">Dessert</a>
-
-						</div></li>
-
-					<li class="nav-item"><a
-						class="nav-link text-light font-weight-bold px-3" href="#">ABOUT
-							US</a></li>
-
-					<li class="nav-item"><a
-						class="nav-link text-light font-weight-bold px-3" href="#">CONTACT</a>
-
-					</li>
-
-				</ul>
-
-
-				<!-- Search bar -->
-
-				<form class="form-inline ml-3">
-
-					<div class="input-group">
-
-						<input type="text" class="form-control " placeholder="Search">
-
-						<button type="submit">
-							<i class="fa fa-search"></i>
-						</button>
-
+	<div class="site-navbar fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-success">
+			<div class="container">
+				<a class="navbar-brand  font-weight-bold px-3 text-light" href="/">
+					Natal Parapat
+					<div style="font-size: 10px">
+						SE-JABODETABEK (21 Des 2019) <br /> <span id="countdown"></span>
 					</div>
+				</a>
+				<button type="button" class="navbar-toggler bg-success"
+					data-toggle="collapse" data-target="#nav">
 
-				</form>
+					<span class="navbar-toggler-icon"></span>
 
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-between"
+					id="nav">
+
+					<ul class="navbar-nav">
+
+						<li class="nav-item"><a
+							class="nav-link text-light font-weight-bold px-3" href="/">HOME</a>
+
+						</li>
+
+						<li class="nav-item"><a
+							class="nav-link text-light font-weight-bold px-3"
+							href="panitia">PANITIA</a></li>
+
+						<li class="nav-item"><a
+							class="nav-link text-light font-weight-bold px-3" href="location">LOKASI
+						</a></li>
+
+						<li class="nav-item"><a
+							class="nav-link text-light font-weight-bold px-3" href="#">CONTACT</a>
+
+						</li>
+
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 </header>
 
 </html>

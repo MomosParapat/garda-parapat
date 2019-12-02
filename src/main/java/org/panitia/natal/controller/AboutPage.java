@@ -11,7 +11,7 @@ public class AboutPage {
 	
 	@RequestMapping("/about")
 	public String index(Model model) {
-        model.addAttribute("pageTitle", "About Us");
+        model.addAttribute("pageTitle", "Tentang Kami");
         return "about-us";
 	}
 

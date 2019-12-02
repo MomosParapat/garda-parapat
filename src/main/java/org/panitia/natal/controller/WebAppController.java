@@ -16,14 +16,24 @@ public class WebAppController {
 	public WebAppController(Environment environment) {
 		appMode = environment.getProperty("app-mode");
 	}
-	
+
 	@RequestMapping("/")
 	public String index(Model model) {
 		model.addAttribute("datetime", new Date());
-        model.addAttribute("username", "Ömerrrr");
-        model.addAttribute("mode", appMode);
+		model.addAttribute("username", "Ömerrrr");
+		model.addAttribute("mode", appMode);
 
-        return "index";
+		return "index";
 	}
 
+	@RequestMapping("/location")
+	public String location(Model model) {
+		model.addAttribute("pageTitle", "Lokasi");
+		return "location";
+	}
+	@RequestMapping("/proposal")
+	public String proposal(Model model) {
+		model.addAttribute("pageTitle", "Proposal");
+		return "proposal";
+	}
 }

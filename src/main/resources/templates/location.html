@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Panitia Natal</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+		<div class="container bgContent">
+			<div class="row" style="padding-bottom: 50px">
+				<div class="col"></div>
+				<div class="col-md-10">
+					<div class="embed-responsive embed-responsive-16by9"
+						style="border-radius: 25px;">
+						<iframe class="embed-responsive-item"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.565486927468!2d106.84524975087474!3d-6.188852895497587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f446834bfeef%3A0x5337fa5549a8b700!2sThe%20Acacia%20Hotel%20%26%20Resort!5e0!3m2!1sen!2sid!4v1575268658249!5m2!1sen!2sid"
+							frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
