@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Tanya Jawab</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+		<div class="container bgContent">
+			<div class="row" style="padding-bottom: 100px">
+				<div class="col"></div>
+				<div class="col-md-10">
+					<div class="accordion" id="accordion">
+						<div class="card">
+							<div class="card-header" id="heading1" data-toggle="collapse"
+								data-target="#collapse1" aria-expanded="true"
+								aria-controls="collapse1">
+								<p class="mb-0">Apa itu Parapat?</p>
+							</div>
+							<div id="collapse1" class="collapse show"
+								aria-labelledby="heading1" data-parent="#accordion">
+								<div class="card-body">Parapat adalah salah satu marga batak yang paling cihuy... keturunan borbor
+									marsada</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading2" data-toggle="collapse"
+								data-target="#collapse2" aria-expanded="false"
+								aria-controls="collapse2">
+								<p class="mb-0">Siapa yang berhak Datang ke Acara ini?</p>
+							</div>
+
+							<div id="collapse2" class="collapse" aria-labelledby="heading2"
+								data-parent="#accordion">
+								<div class="card-body">
+									Semua marga parapat boru, bere dan ibabere SE-JABODETABEK<br>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading3" data-toggle="collapse"
+								data-target="#collapse3" aria-expanded="false"
+								aria-controls="collapse3">
+								<p class="mb-0">Saya berdomisili diluar JABODETABEK, pada saat acara saya berada
+									di Jakarta, bolehkah saya ikut?</p>
+							</div>
+
+							<div id="collapse3" class="collapse" aria-labelledby="heading3"
+								data-parent="#accordion">
+								<div class="card-body">Boleh, tapi itu pendapat pribadi
+									saya..kwkwkwk, nanti akan dibahas...</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

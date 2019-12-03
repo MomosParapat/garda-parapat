@@ -3,7 +3,7 @@
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorator="layout/default">
 <head>
-<title>Panitia Natal</title>
+<title>Proposal</title>
 </head>
 <body>
 	<div layout:fragment="content">
@@ -16,10 +16,13 @@
 			<div class="row" style="padding-bottom: 50px">
 				<div class="col"></div>
 				<div class="col-md-10">
-					<iframe frameborder="0"
-						style="height: 600px; width: 100%; position: relative; border: 1px solid #ddd; padding: 5px; background: #ffffff; padding: 10px;"
-						src="/files/Proposal Panitia Natal Bersama.pdf"></iframe>
+					<div class="embed-responsive embed-responsive-16by9"
+						style="border-radius: 25px;">
 
+						<iframe frameborder="0"
+							style="padding: 5px; background: #ffffff;"
+							src="/files/Proposal_Panitia_Natal_Bersama.pdf"></iframe>
+					</div>
 				</div>
 				<div class="col"></div>
 			</div>

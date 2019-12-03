@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<title>Tertib Acara</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="public-header">
+			<div class="container">
+				<h1>[[${pageTitle}]]</h1>
+			</div>
+		</div>
+		<div class="container bgContent">
+			<div class="row" style="padding-bottom: 100px">
+				<div class="col"></div>
+				<div class="col-md-10">
+					<h3>
+						<strong>Tata Acara Ibadah</strong>
+					</h3>
+
+					<div class="accordion" id="accordion">
+						<div class="card">
+							<div class="card-header" id="heading1" data-toggle="collapse"
+								data-target="#collapse1" aria-expanded="true"
+								aria-controls="collapse1">
+								<p class="mb-0">1. Lagu Pembukaan</p>
+							</div>
+							<div id="collapse1" class="collapse show"
+								aria-labelledby="heading1" data-parent="#accordion">
+								<div class="card-body">
+									Hai mari berhimpun dan bersukaria <br />dst...
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading2" data-toggle="collapse"
+								data-target="#collapse2" aria-expanded="false"
+								aria-controls="collapse2">
+								<p class="mb-0">2. Doa Pembukaan</p>
+							</div>
+
+							<div id="collapse2" class="collapse" aria-labelledby="heading2"
+								data-parent="#accordion">
+								<div class="card-body">
+									Bapak kami yang di Sorga <br />dst...
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading3" data-toggle="collapse"
+								data-target="#collapse3" aria-expanded="false"
+								aria-controls="collapse3">
+								<p class="mb-0">3. Lagu BE no...</p>
+							</div>
+
+							<div id="collapse3" class="collapse" aria-labelledby="heading3"
+								data-parent="#accordion">
+								<div class="card-body">
+									Sonang ni borngin nai <br />dst...
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading4" data-toggle="collapse"
+								data-target="#collapse4" aria-expanded="false"
+								aria-controls="collapse4">
+								<p class="mb-0">4. Firman Tuhan <br/>(Pdt. Judika Sihaloho)</p>
+							</div>
+
+							<div id="collapse4" class="collapse" aria-labelledby="heading4"
+								data-parent="#accordion">
+								<div class="card-body">
+									Yesus Juru Selamat, Sang Pembaharu Kehidupan <br /> (Matius 1:21)...
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -36,4 +36,32 @@ public class WebAppController {
 		model.addAttribute("pageTitle", "Proposal");
 		return "proposal";
 	}
+	
+	@RequestMapping("/about")
+	public String about(Model model) {
+        model.addAttribute("pageTitle", "Tentang Kami");
+        return "about-us";
+	}
+	@RequestMapping("/panitia")
+	public String commite(Model model) {
+		model.addAttribute("pageTitle", "Susunan Panitia");
+		return "committee";
+	}
+
+	@RequestMapping("/pembicara")
+	public String speaker(Model model) {
+		model.addAttribute("pageTitle", "Pelayan Firman Tuhan");
+		return "pembicara";
+	}
+	
+	@RequestMapping("/faq")
+	public String faq(Model model) {
+		model.addAttribute("pageTitle", "Tanya Jawab");
+		return "faq";
+	}
+	@RequestMapping("/acara")
+	public String acara(Model model) {
+		model.addAttribute("pageTitle", "Susunan Acara");
+		return "acara";
+	}
 }
