@@ -37,11 +37,11 @@ public class WebAppController {
 		return "proposal";
 	}
 	
-	@RequestMapping("/about")
-	public String about(Model model) {
-        model.addAttribute("pageTitle", "Tentang Kami");
-        return "about-us";
-	}
+//	@RequestMapping("/about")
+//	public String about(Model model) {
+//        model.addAttribute("pageTitle", "Tentang Kami");
+//        return "about-us";
+//	}
 	@RequestMapping("/panitia")
 	public String commite(Model model) {
 		model.addAttribute("pageTitle", "Susunan Panitia");
